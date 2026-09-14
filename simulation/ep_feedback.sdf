@@ -1,0 +1,2158 @@
+<sdf xmlns:ignition="http://ignitionrobotics.org" version="1.9">
+  <model name="robomaster_ep">
+    <static>false</static>
+    <link name="base_link">
+      <inertial>
+        <pose>-0.009769931924882633 0.0002138648669796558 0.0789273028951487 0 0 0</pose>
+        <mass>2.5559999999999992</mass>
+        <inertia>
+          <ixx>0.029191678732247699</ixx>
+          <ixy>2.505741153096685e-05</ixy>
+          <ixz>0.00097025456754884292</ixz>
+          <iyy>0.021179542208910981</iyy>
+          <iyz>-4.5225119769159957e-05</iyz>
+          <izz>0.031210417654500781</izz>
+        </inertia>
+      </inertial>
+      <collision name="base_link_fixed_joint_lump__base_collision_collision">
+        <pose>-0.0058789 -0.0001128 0.0640807 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/base_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="base_link_fixed_joint_lump__arm_base_collision_collision_1">
+        <pose>-0.002098 0.0005475000000000001 0.13265 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_base_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="base_link_fixed_joint_lump__ExtensionBase_collision_2">
+        <pose>-0.004775399999999999 0.0010384 0.109503 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.279694 0.231779 0.013</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name="base_link_fixed_joint_lump__top_collision_3">
+        <pose>-0.1116668 0.0024664 0.1561657 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.108973 0.059103 0.022915</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base_link_fixed_joint_lump__armor_visual">
+        <pose>-0.0064553 -0.078141 0.0639377 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/armor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.284641 0.284641 0.284641 0.8</diffuse>
+          <ambient>0.284641 0.284641 0.284641 0.8</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__battery_visual_1">
+        <pose>-0.130336 -0.0018702 0.0520677 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/battery.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__battery_pin_left_visual_2">
+        <pose>-0.1158907 0.06611499999999999 0.08717430000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/battery_pin_left.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__battery_pin_right_visual_3">
+        <pose>-0.1158907 -0.0658844 0.08717430000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/battery_pin_right.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__chassis_visual_4">
+        <pose>-0.0059039 0.0004154 0.08744550000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/chassis.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__controller_visual_5">
+        <pose>-0.1142288 -0.0006716 0.087325 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/controller.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__controller_cover_visual_6">
+        <pose>-0.0787757 -0.002522 0.1067327 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/controller_cover.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__arm_base_visual_7">
+        <pose>-0.0008983 -0.0019361 0.1252733 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__left_servo_visual_8">
+        <pose>-0.013507 0.0010384 0.1192304 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/left_servo.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__right_servo_visual_9">
+        <pose>-0.013507 0.0010384 0.1192304 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_servo.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__extension_base_visual_10">
+        <pose>-0.0091948 0.0010492 0.105193 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/extension_base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__extension_support_visual_11">
+        <pose>-0.0877768 0.0085884 0.1098389 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/extension_support.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__front_hit_sensor_visual_12">
+        <pose>0.1569985 -0.0004276 0.0779362 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/hit_sensor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.212231 0.212231 0.212231 1</diffuse>
+          <ambient>0.212231 0.212231 0.212231 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__front_led_visual_13">
+        <pose>0.1657413 -0.0017117 0.07797370000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/led.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0.971698 0.971698 1</diffuse>
+          <ambient>0 0.971698 0.971698 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__intelligent_controller_visual_14">
+        <pose>-0.1348326 0.0024866 0.1580269 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/intelligent_controller.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1 1 1 1</diffuse>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__wifi_antenna_left_visual_15">
+        <pose>-0.1495431 0.0369653 0.1708372 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wifi_antenna_left.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__wifi_antenna_right_visual_16">
+        <pose>-0.1495451 -0.0326532 0.1717503 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wifi_antenna_right.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__left_hit_sensor_visual_17">
+        <pose>-0.0024413 0.0886932 0.0644841 0 0 1.570796326794896</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/hit_sensor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.212231 0.212231 0.212231 1</diffuse>
+          <ambient>0.212231 0.212231 0.212231 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__left_led_visual_18">
+        <pose>-0.001157199999999998 0.09743599999999999 0.0645216 0 0 1.570796326794896</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/led.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0.971698 0.971698 1</diffuse>
+          <ambient>0 0.971698 0.971698 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__rear_hit_sensor_visual_19">
+        <pose>-0.1581827 -0.0027864 0.0650168 0 0 3.141592653589793</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/hit_sensor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.212231 0.212231 0.212231 1</diffuse>
+          <ambient>0.212231 0.212231 0.212231 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__rear_led_visual_20">
+        <pose>-0.1669255 -0.001502299999999999 0.0650543 0 0 3.141592653589793</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/led.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0.971698 0.971698 1</diffuse>
+          <ambient>0 0.971698 0.971698 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__right_hit_sensor_visual_21">
+        <pose>-0.0024413 -0.0886932 0.0644841 0 0 -1.570796326794896</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/hit_sensor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.212231 0.212231 0.212231 1</diffuse>
+          <ambient>0.212231 0.212231 0.212231 1</ambient>
+        </material>
+      </visual>
+      <visual name="base_link_fixed_joint_lump__right_led_visual_22">
+        <pose>-0.003725399999999998 -0.09743599999999999 0.0645216 0 0 -1.570796326794896</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/led.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0.971698 0.971698 1</diffuse>
+          <ambient>0 0.971698 0.971698 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="arm_1_joint" type="revolute">
+      <pose relative_to="base_link">0.0103961 -0.0245329 0.1560387 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>arm_1_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.27400000000000002</lower>
+          <upper>1.3839999999999999</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="arm_1_link">
+      <pose relative_to="arm_1_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0005586 0.023592 0.0011729 0 0 0</pose>
+        <mass>0.056000000000000001</mass>
+        <inertia>
+          <ixx>0.0156113</ixx>
+          <ixy>2.4300000000000001e-05</ixy>
+          <ixz>1.7999999999999999e-06</ixz>
+          <iyy>0.016155300000000001</iyy>
+          <iyz>-0.0023010999999999999</iyz>
+          <izz>0.0018092</izz>
+        </inertia>
+      </inertial>
+      <collision name="arm_1_link_fixed_joint_lump__arm_1_collision_collision">
+        <pose>0.0065116 0.0213649 0.0639448 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_1_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="arm_1_link_fixed_joint_lump__arm_1_visual">
+        <pose>0.0073108 0.0184816 0.0437162 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+      <visual name="arm_1_link_fixed_joint_lump__arm_1_cylinder_visual_1">
+        <pose>-0.0239031 0.0255713 -0.0368083 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_1_cylinder.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="arm_2_joint" type="revolute">
+      <pose relative_to="arm_1_link">0.0018704 0.0438659 0.1210238 0 0 0</pose>
+      <parent>arm_1_link</parent>
+      <child>arm_2_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="arm_2_link">
+      <pose relative_to="arm_2_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.02189535528071832 -0.02025770243902439 -0.007171135915387674 0 0 0</pose>
+        <mass>0.082000000000000003</mass>
+        <inertia>
+          <ixx>0.01386823100567652</ixx>
+          <ixy>1.0206478505252389e-06</ixy>
+          <ixz>1.304866927898e-06</ixz>
+          <iyy>0.0061753764905269704</iyy>
+          <iyz>0.0031105248158027148</iyz>
+          <izz>0.01214604742501049</izz>
+        </inertia>
+      </inertial>
+      <collision name="arm_2_link_fixed_joint_lump__arm_2_collision_collision">
+        <pose>0.0222614 -0.0202749 -0.008503999999999999 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_2_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="arm_2_link_fixed_joint_lump__arm_2_visual">
+        <pose>0.0256122 -0.020134 -0.001308 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="arm_2_link_fixed_joint_lump__arm_2_bar_1_visual_1">
+        <pose>7.62e-05 0.0010863 -0.0002509 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_2_bar_1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="arm_2_link_fixed_joint_lump__arm_2_bar_2_visual_2">
+        <pose>-0.0423232 -0.0099192 0.0221971 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/arm_2_bar_2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="arm_2_link_fixed_joint_lump__camera_visual_3">
+        <pose>0.004975278734502051 -0.0195698 0.04735108156880358 0 -0.05547619999999993 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/camera.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="endpoint_bracket_joint" type="revolute">
+      <pose relative_to="arm_2_link">0.1058557 0.006752 -0.0561093 0 0 0</pose>
+      <parent>arm_2_link</parent>
+      <child>endpoint_bracket_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="endpoint_bracket_link">
+      <pose relative_to="endpoint_bracket_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.03001092888888889 -0.02738414222222222 -0.02672923611111111 0 0 0</pose>
+        <mass>0.17999999999999999</mass>
+        <inertia>
+          <ixx>0.00061307960294829436</ixx>
+          <ixy>0.00019272847385998039</ixy>
+          <ixz>4.8261246130092223e-05</ixz>
+          <iyy>0.0011423872924253449</iyy>
+          <iyz>-2.4548075389355568e-05</iyz>
+          <izz>0.0010954414947902491</izz>
+        </inertia>
+      </inertial>
+      <collision name="endpoint_bracket_link_fixed_joint_lump__endpoint_bracket_collision_collision">
+        <pose>0.0116468 -0.0288044 0.0041342 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/endpoint_bracket_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="endpoint_bracket_link_fixed_joint_lump__gripper_base_collision_collision_1">
+        <pose>0.0006481 -0.0271238 -0.0110982 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_base_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="endpoint_bracket_link_fixed_joint_lump__endpoint_bracket_visual">
+        <pose>0.0071657 -0.0245846 0.0008407 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/endpoint_bracket.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+      <visual name="endpoint_bracket_link_fixed_joint_lump__gripper_base_visual_1">
+        <pose>0.0002793 -0.027026 0.0001815 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="gripper_m_joint" type="prismatic">
+      <pose relative_to="endpoint_bracket_link">0.0002793 -0.027026 0.0001815 0 0 0</pose>
+      <parent>endpoint_bracket_link</parent>
+      <child>gripper_m_link</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-0.023</lower>
+          <upper>0.001</upper>
+          <effort>10</effort>
+          <velocity>0.2</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="gripper_m_link">
+      <pose relative_to="gripper_m_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>9.9999999999999995e-07</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>9.9999999999999995e-07</iyy>
+          <iyz>0</iyz>
+          <izz>9.9999999999999995e-07</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name="left_gripper_joint_1" type="revolute">
+      <pose relative_to="gripper_m_link">0.0163032 0.0212032 -0.0399201 0 0 0</pose>
+      <parent>gripper_m_link</parent>
+      <child>left_gripper_link_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_1">
+      <pose relative_to="left_gripper_joint_1">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="left_gripper_link_1_fixed_joint_lump__left_gripper_1_visual">
+        <pose>-1.52e-05 8.12e-05 -2.25e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_gripper_joint_2" type="revolute">
+      <pose relative_to="left_gripper_link_1">0.0213495 0.0130363 0 0 0 0</pose>
+      <parent>left_gripper_link_1</parent>
+      <child>left_gripper_link_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_2">
+      <pose relative_to="left_gripper_joint_2">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="left_gripper_link_2_fixed_joint_lump__left_gripper_2_collision_collision">
+        <pose>0.0136108 -0.003318 -0.0296613 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_2_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="left_gripper_link_2_fixed_joint_lump__left_gripper_2_visual">
+        <pose>0.0135565 -0.0033557 -2.25e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_gripper_joint_4" type="revolute">
+      <pose relative_to="left_gripper_link_2">0.00485 0.0204148 -5.8e-06 0 0 0</pose>
+      <parent>left_gripper_link_2</parent>
+      <child>left_gripper_link_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_4">
+      <pose relative_to="left_gripper_joint_4">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="left_gripper_link_4_fixed_joint_lump__left_gripper_4_collision_collision">
+        <pose>-7.559999999999999e-05 -2.97e-05 -0.0296554 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_4_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="left_gripper_link_4_fixed_joint_lump__left_gripper_4_visual">
+        <pose>-4.74e-05 0.0001737 -1.67e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_gripper_joint_5" type="revolute">
+      <pose relative_to="left_gripper_link_4">0.0385916 0.0103143 1.6e-06 0 0 0</pose>
+      <parent>left_gripper_link_4</parent>
+      <child>left_gripper_link_5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_5">
+      <pose relative_to="left_gripper_joint_5">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="left_gripper_link_5_fixed_joint_lump__left_gripper_5_collision_collision">
+        <pose>-7.26e-05 -1.8e-06 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_5_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="left_gripper_link_5_fixed_joint_lump__left_gripper_5_visual">
+        <pose>-7.26e-05 -1.8e-06 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_5.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_gripper_joint_6" type="revolute">
+      <pose relative_to="left_gripper_link_5">0.0051144 -0.0140851 0 0 0 0</pose>
+      <parent>left_gripper_link_5</parent>
+      <child>left_gripper_link_6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_6">
+      <pose relative_to="left_gripper_joint_6">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="left_gripper_link_6_fixed_joint_lump__left_gripper_6_collision_collision">
+        <pose>-0.0149892 -0.0167532 -0.0001821 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_6_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="left_gripper_link_6_fixed_joint_lump__left_gripper_6_visual">
+        <pose>-0.0149194 -0.0168522 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_6.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="left_gripper_joint_7" type="revolute">
+      <pose relative_to="left_gripper_link_6">-0.0148823 -0.0168513 0 0 0 0</pose>
+      <parent>left_gripper_link_6</parent>
+      <child>left_gripper_link_7</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="left_gripper_link_7">
+      <pose relative_to="left_gripper_joint_7">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="left_gripper_link_7_fixed_joint_lump__left_gripper_collision_collision">
+        <pose>-0.0149126 -0.0167727 -0.0296388 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="left_gripper_link_7_fixed_joint_lump__left_gripper_7_visual">
+        <pose>-0.0153264 -0.0166317 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/gripper_left_7.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_1" type="revolute">
+      <pose relative_to="gripper_m_link">0.0163034 -0.0209781 -0.0399201 0 0 0</pose>
+      <parent>gripper_m_link</parent>
+      <child>right_gripper_link_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_1">
+      <pose relative_to="right_gripper_joint_1">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="right_gripper_link_1_fixed_joint_lump__right_gripper_1_visual">
+        <pose>-1.52e-05 -8.12e-05 -2.25e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_2" type="revolute">
+      <pose relative_to="right_gripper_link_1">0.0213495 -0.0130363 0 0 0 0</pose>
+      <parent>right_gripper_link_1</parent>
+      <child>right_gripper_link_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_2">
+      <pose relative_to="right_gripper_joint_2">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="right_gripper_link_2_fixed_joint_lump__right_gripper_2_collision_collision">
+        <pose>0.0134077 0.0024401 -0.0296613 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_2_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="right_gripper_link_2_fixed_joint_lump__right_gripper_2_visual">
+        <pose>0.0127099 0.0021056 -2.25e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_4" type="revolute">
+      <pose relative_to="right_gripper_link_2">0.0047151 -0.0208481 -5.8e-06 0 0 0</pose>
+      <parent>right_gripper_link_2</parent>
+      <child>right_gripper_link_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_4">
+      <pose relative_to="right_gripper_joint_4">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="right_gripper_link_4_fixed_joint_lump__right_gripper_4_collision_collision">
+        <pose>-6.57e-05 1.16e-05 -0.0296554 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_4_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="right_gripper_link_4_fixed_joint_lump__right_gripper_4_visual">
+        <pose>-4.74e-05 -0.0001737 -1.67e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_4.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_5" type="revolute">
+      <pose relative_to="right_gripper_link_4">0.0385916 -0.0103143 1.6e-06 0 0 0</pose>
+      <parent>right_gripper_link_4</parent>
+      <child>right_gripper_link_5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_5">
+      <pose relative_to="right_gripper_joint_5">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="right_gripper_link_5_fixed_joint_lump__right_gripper_5_collision_collision">
+        <pose>-0.0001606 2.35e-05 8.1e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_5_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="right_gripper_link_5_fixed_joint_lump__right_gripper_5_visual">
+        <pose>-7.26e-05 1.7e-06 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_5.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_6" type="revolute">
+      <pose relative_to="right_gripper_link_5">0.0059278 0.0133069 0 0 0 0</pose>
+      <parent>right_gripper_link_5</parent>
+      <child>right_gripper_link_6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_6">
+      <pose relative_to="right_gripper_joint_6">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="right_gripper_link_6_fixed_joint_lump__right_gripper_6_collision_collision">
+        <pose>-0.0156676 0.0173828 6.82e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_6_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="right_gripper_link_6_fixed_joint_lump__right_gripper_6_visual">
+        <pose>-0.03103 0.0338258 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_6.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="right_gripper_joint_7" type="revolute">
+      <pose relative_to="right_gripper_link_6">-0.0156955 0.0176295 0 0 0 0</pose>
+      <parent>right_gripper_link_6</parent>
+      <child>right_gripper_link_7</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>1</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="right_gripper_link_7">
+      <pose relative_to="right_gripper_joint_7">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <collision name="right_gripper_link_7_fixed_joint_lump__right_gripper_7_collision_collision">
+        <pose>-0.0150056 0.0168496 -0.0296388 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_7_collision.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>2</mu>
+              <mu2>2</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="right_gripper_link_7_fixed_joint_lump__right_gripper_7_visual">
+        <pose>-3.72e-05 9e-07 -1.83e-05 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/right_gripper_7.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0356014 0.0356014 0.0356014 1</diffuse>
+          <ambient>0.0356014 0.0356014 0.0356014 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rod_1_joint" type="revolute">
+      <pose relative_to="endpoint_bracket_link">0.0134583 -0.0540971 0.0213068 0 -0.021293 0</pose>
+      <parent>endpoint_bracket_link</parent>
+      <child>rod_1_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rod_1_link">
+      <pose relative_to="rod_1_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0477809 0 0.0272644 0 0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>0.0016031000000000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00040850000000000001</iyy>
+          <iyz>0.00065700000000000003</iyz>
+          <izz>0.0011959</izz>
+        </inertia>
+      </inertial>
+      <collision name="rod_1_link_fixed_joint_lump__rod_1_collision_collision">
+        <pose>-0.0477809 0 0.0272644 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_1_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="rod_1_link_fixed_joint_lump__rod_1_visual">
+        <pose>-0.0479737 0 0.0301898 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_1.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="triangle_joint" type="revolute">
+      <pose relative_to="arm_1_link">0.0020224 -0.007103 0.1212334 0 0.2502802 0</pose>
+      <parent>arm_1_link</parent>
+      <child>triangle_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="triangle_link">
+      <pose relative_to="triangle_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.1417841 0.0321051 -0.1257179 0 0 0</pose>
+        <mass>0.0089999999999999993</mass>
+        <inertia>
+          <ixx>0.00002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00002</iyy>
+          <iyz>0</iyz>
+          <izz>0.00002</izz>
+        </inertia>
+      </inertial>
+      <collision name="triangle_link_fixed_joint_lump__triangle_collision_collision">
+        <pose>-0.0091994 0 0.012377 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/triangle_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="triangle_link_fixed_joint_lump__triangle_visual">
+        <pose>-0.009595299999999999 0 0.0131247 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/triangle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rod_2_joint" type="revolute">
+      <pose relative_to="base_link">-0.0224276 -0.0280317 0.1807759 0 -0.009424800000000002 0</pose>
+      <parent>base_link</parent>
+      <child>rod_2_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rod_2_link">
+      <pose relative_to="rod_2_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.0011528 0 0.0549123 0 0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>0.0016146999999999999</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0015792</iyy>
+          <iyz>-3.3899999999999997e-05</iyz>
+          <izz>3.6900000000000002e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="rod_2_link_fixed_joint_lump__rod_2_collision_collision">
+        <pose>0.0011528 0 0.0549123 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_2_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="rod_2_link_fixed_joint_lump__rod_2_visual">
+        <pose>-0.0012722 0 0.0561361 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rod_joint" type="revolute">
+      <pose relative_to="base_link">0.009804999999999999 0.0224625 0.1572211 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>rod_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.79935999999999996</lower>
+          <upper>1.7313700000000001</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rod_link">
+      <pose relative_to="rod_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-8.110000000000001e-05 0.0023793 8.58e-05 0 0 0</pose>
+        <mass>0.010999999999999999</mass>
+        <inertia>
+          <ixx>0.00091029999999999995</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002029</iyy>
+          <iyz>0.00034309999999999999</iyz>
+          <izz>0.0007136</izz>
+        </inertia>
+      </inertial>
+      <collision name="rod_link_fixed_joint_lump__rod_collision_collision">
+        <pose>-0.02432 0.0022871 0.0136485 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="rod_link_fixed_joint_lump__rod_visual">
+        <pose>-0.0261857 0.0022566 0.0121229 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rod_3_joint" type="revolute">
+      <pose relative_to="rod_link">-0.042397 0.0004533 0.0223131 0 0 0</pose>
+      <parent>rod_link</parent>
+      <child>rod_3_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.34732000000000002</lower>
+          <upper>1.21475</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rod_3_link">
+      <pose relative_to="rod_3_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0003574 9.500000000000001e-06 0.0001674 0 0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>0.0059201000000000002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0058869999999999999</iyy>
+          <iyz>1.8700000000000001e-05</iyz>
+          <izz>3.4499999999999998e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name="rod_3_link_fixed_joint_lump__rod_3_collision_collision">
+        <pose>0.0004696 9.500000000000001e-06 0.0561803 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_3_collision.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="rod_3_link_fixed_joint_lump__rod_3_visual">
+        <pose>-0.0017304 0 0.0633558 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/rod_3.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.0352183 0.035 0.0352183 1</diffuse>
+          <ambient>0.0352183 0.035 0.0352183 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="front_left_wheel_joint" type="revolute">
+      <pose relative_to="base_link">0.1 0.1 0.05 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>front_left_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>20</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="front_left_wheel_link">
+      <pose relative_to="front_left_wheel_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0002104 5.31e-05 -0.0004148 0 0 0</pose>
+        <mass>0.16200000000000001</mass>
+        <inertia>
+          <ixx>0.00020000000000000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00012</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012</izz>
+        </inertia>
+      </inertial>
+      <collision name="front_left_wheel_link_fixed_joint_lump__front_left_wheel_collision">
+        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.042000000000000003</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1 ignition:expressed_in="base_link">1 -1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="front_left_wheel_link_fixed_joint_lump__front_left_wheel_bolt_visual">
+        <pose>0 0.0145 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.001</length>
+            <radius>0.0070000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.5625 0.1875 0 1</diffuse>
+          <ambient>0.5625 0.1875 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="front_left_wheel_link_fixed_joint_lump__front_left_wheel_visual_1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="front_right_wheel_joint" type="revolute">
+      <pose relative_to="base_link">0.1 -0.1 0.05 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>front_right_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>20</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="front_right_wheel_link">
+      <pose relative_to="front_right_wheel_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0002104 5.31e-05 -0.0004148 0 0 0</pose>
+        <mass>0.16200000000000001</mass>
+        <inertia>
+          <ixx>0.00020000000000000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00012</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012</izz>
+        </inertia>
+      </inertial>
+      <collision name="front_right_wheel_link_fixed_joint_lump__front_right_wheel_collision">
+        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.042000000000000003</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1 ignition:expressed_in="base_link">1 1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="front_right_wheel_link_fixed_joint_lump__front_right_wheel_bolt_visual">
+        <pose>0 -0.0145 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.001</length>
+            <radius>0.0070000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.5625 0.1875 0 1</diffuse>
+          <ambient>0.5625 0.1875 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="front_right_wheel_link_fixed_joint_lump__front_right_wheel_visual_1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 -1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rear_left_wheel_joint" type="revolute">
+      <pose relative_to="base_link">-0.1 0.1 0.05 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>rear_left_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>20</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rear_left_wheel_link">
+      <pose relative_to="rear_left_wheel_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0002104 5.31e-05 -0.0004148 0 0 0</pose>
+        <mass>0.16200000000000001</mass>
+        <inertia>
+          <ixx>0.00020000000000000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00012</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012</izz>
+        </inertia>
+      </inertial>
+      <collision name="rear_left_wheel_link_fixed_joint_lump__rear_left_wheel_collision">
+        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.042000000000000003</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1 ignition:expressed_in="base_link">1 1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="rear_left_wheel_link_fixed_joint_lump__rear_left_wheel_bolt_visual">
+        <pose>0 0.0145 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.001</length>
+            <radius>0.0070000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.5625 0.1875 0 1</diffuse>
+          <ambient>0.5625 0.1875 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="rear_left_wheel_link_fixed_joint_lump__rear_left_wheel_visual_1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 -1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name="rear_right_wheel_joint" type="revolute">
+      <pose relative_to="base_link">-0.1 -0.1 0.05 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>rear_right_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>20</velocity>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="rear_right_wheel_link">
+      <pose relative_to="rear_right_wheel_joint">0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.0002104 5.31e-05 -0.0004148 0 0 0</pose>
+        <mass>0.16200000000000001</mass>
+        <inertia>
+          <ixx>0.00020000000000000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00012</iyy>
+          <iyz>0</iyz>
+          <izz>0.00012</izz>
+        </inertia>
+      </inertial>
+      <collision name="rear_right_wheel_link_fixed_joint_lump__rear_right_wheel_collision">
+        <pose>0 0 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.042000000000000003</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>0</mu2>
+              <fdir1 ignition:expressed_in="base_link">1 -1 0</fdir1>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="rear_right_wheel_link_fixed_joint_lump__rear_right_wheel_bolt_visual">
+        <pose>0 -0.0145 0 1.570796326794896 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.001</length>
+            <radius>0.0070000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.5625 0.1875 0 1</diffuse>
+          <ambient>0.5625 0.1875 0 1</ambient>
+        </material>
+      </visual>
+      <visual name="rear_right_wheel_link_fixed_joint_lump__rear_right_wheel_visual_1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/nvidia/robomaster_ep_results/v1_2026-09-09/resources/robomaster_description/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name="arm_base_joint" attached_to="chassis_base_link">
+      <pose>0 0.001038 0.090648 0 -0 0</pose>
+    </frame>
+    <frame name="arm_base_link" attached_to="arm_base_joint" />
+    <frame name="camera_optical_joint" attached_to="camera_link">
+      <pose>0.002 0 0.004 0.041623 0 -1.5708</pose>
+    </frame>
+    <frame name="camera_optical_link" attached_to="camera_optical_joint" />
+    <frame name="camera_joint" attached_to="arm_2_link">
+      <pose>0.005387 -0.01957 0.047374 3.14159 1.45174 3.14159</pose>
+    </frame>
+    <frame name="camera_link" attached_to="camera_joint" />
+    <frame name="end_point_joint" attached_to="endpoint_bracket_link">
+      <pose>0.011013 -0.027026 -0.010382 0 -0 0</pose>
+    </frame>
+    <frame name="end_point_link" attached_to="end_point_joint" />
+    <frame name="gripper_joint_t" attached_to="endpoint_bracket_link">
+      <pose>0.124 0 -0.039 0 -0 0</pose>
+    </frame>
+    <frame name="gripper_t_link" attached_to="gripper_joint_t" />
+    <frame name="extension_base_joint" attached_to="chassis_base_link">
+      <pose>-0.009195 0.001049 0.070543 0 -0 0</pose>
+    </frame>
+    <frame name="extension_base_link" attached_to="extension_base_joint" />
+    <frame name="front_led_joint" attached_to="front_hit_sensor_link">
+      <pose>0.008743 -0.001284 3.8e-05 0 -0 0</pose>
+    </frame>
+    <frame name="front_led_link" attached_to="front_led_joint" />
+    <frame name="front_hit_sensor_joint" attached_to="chassis_base_link">
+      <pose>0.156999 -0.000428 0.043286 0 -0 0</pose>
+    </frame>
+    <frame name="front_hit_sensor_link" attached_to="front_hit_sensor_joint" />
+    <frame name="intelligent_controller_joint" attached_to="chassis_base_link">
+      <pose>-0.134833 0.002487 0.1329 0 -0 0</pose>
+    </frame>
+    <frame name="intelligent_controller_link" attached_to="intelligent_controller_joint" />
+    <frame name="left_led_joint" attached_to="left_hit_sensor_link">
+      <pose>0.008743 -0.001284 3.8e-05 0 -0 0</pose>
+    </frame>
+    <frame name="left_led_link" attached_to="left_led_joint" />
+    <frame name="left_hit_sensor_joint" attached_to="chassis_base_link">
+      <pose>-0.002441 0.088693 0.029834 0 -0 1.5708</pose>
+    </frame>
+    <frame name="left_hit_sensor_link" attached_to="left_hit_sensor_joint" />
+    <frame name="rear_led_joint" attached_to="rear_hit_sensor_link">
+      <pose>0.008743 -0.001284 3.8e-05 0 -0 0</pose>
+    </frame>
+    <frame name="rear_led_link" attached_to="rear_led_joint" />
+    <frame name="rear_hit_sensor_joint" attached_to="chassis_base_link">
+      <pose>-0.158183 -0.002786 0.030367 0 -0 3.14159</pose>
+    </frame>
+    <frame name="rear_hit_sensor_link" attached_to="rear_hit_sensor_joint" />
+    <frame name="right_led_joint" attached_to="right_hit_sensor_link">
+      <pose>0.008743 -0.001284 3.8e-05 0 -0 0</pose>
+    </frame>
+    <frame name="right_led_link" attached_to="right_led_joint" />
+    <frame name="right_hit_sensor_joint" attached_to="chassis_base_link">
+      <pose>-0.002441 -0.088693 0.029834 0 0 -1.5708</pose>
+    </frame>
+    <frame name="right_hit_sensor_link" attached_to="right_hit_sensor_joint" />
+    <frame name="chassis_base_joint" attached_to="base_link">
+      <pose>0 0 0.03465 0 -0 0</pose>
+    </frame>
+    <frame name="chassis_base_link" attached_to="chassis_base_joint" />
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>arm_1_joint</joint_name>
+      <topic>/ep/joint/arm_1_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>arm_2_joint</joint_name>
+      <topic>/ep/joint/arm_2_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>endpoint_bracket_joint</joint_name>
+      <topic>/ep/joint/endpoint_bracket_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>gripper_m_joint</joint_name>
+      <topic>/ep/joint/gripper_m_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.02</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_1</joint_name>
+      <topic>/ep/joint/left_gripper_joint_1</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_2</joint_name>
+      <topic>/ep/joint/left_gripper_joint_2</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_4</joint_name>
+      <topic>/ep/joint/left_gripper_joint_4</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_5</joint_name>
+      <topic>/ep/joint/left_gripper_joint_5</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_6</joint_name>
+      <topic>/ep/joint/left_gripper_joint_6</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>left_gripper_joint_7</joint_name>
+      <topic>/ep/joint/left_gripper_joint_7</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_1</joint_name>
+      <topic>/ep/joint/right_gripper_joint_1</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_2</joint_name>
+      <topic>/ep/joint/right_gripper_joint_2</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_4</joint_name>
+      <topic>/ep/joint/right_gripper_joint_4</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_5</joint_name>
+      <topic>/ep/joint/right_gripper_joint_5</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_6</joint_name>
+      <topic>/ep/joint/right_gripper_joint_6</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>right_gripper_joint_7</joint_name>
+      <topic>/ep/joint/right_gripper_joint_7</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>rod_1_joint</joint_name>
+      <topic>/ep/joint/rod_1_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>triangle_joint</joint_name>
+      <topic>/ep/joint/triangle_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>rod_2_joint</joint_name>
+      <topic>/ep/joint/rod_2_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>rod_joint</joint_name>
+      <topic>/ep/joint/rod_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-position-controller-system" name="ignition::gazebo::systems::JointPositionController">
+      <joint_name>rod_3_joint</joint_name>
+      <topic>/ep/joint/rod_3_joint</topic>
+      <use_velocity_commands>true</use_velocity_commands>
+      <cmd_max>0.8</cmd_max>
+    </plugin>
+    <plugin filename="ignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
+      <topic>/ep/joint_states</topic>
+      <joint_name>arm_1_joint</joint_name>
+      <joint_name>arm_2_joint</joint_name>
+      <joint_name>endpoint_bracket_joint</joint_name>
+      <joint_name>gripper_m_joint</joint_name>
+      <joint_name>left_gripper_joint_1</joint_name>
+      <joint_name>left_gripper_joint_2</joint_name>
+      <joint_name>left_gripper_joint_4</joint_name>
+      <joint_name>left_gripper_joint_5</joint_name>
+      <joint_name>left_gripper_joint_6</joint_name>
+      <joint_name>left_gripper_joint_7</joint_name>
+      <joint_name>right_gripper_joint_1</joint_name>
+      <joint_name>right_gripper_joint_2</joint_name>
+      <joint_name>right_gripper_joint_4</joint_name>
+      <joint_name>right_gripper_joint_5</joint_name>
+      <joint_name>right_gripper_joint_6</joint_name>
+      <joint_name>right_gripper_joint_7</joint_name>
+      <joint_name>rod_1_joint</joint_name>
+      <joint_name>triangle_joint</joint_name>
+      <joint_name>rod_2_joint</joint_name>
+      <joint_name>rod_joint</joint_name>
+      <joint_name>rod_3_joint</joint_name>
+      <joint_name>front_left_wheel_joint</joint_name>
+      <joint_name>front_right_wheel_joint</joint_name>
+      <joint_name>rear_left_wheel_joint</joint_name>
+      <joint_name>rear_right_wheel_joint</joint_name>
+    </plugin>
+    <plugin filename="ignition-gazebo-mecanum-drive-system" name="ignition::gazebo::systems::MecanumDrive">
+      <front_left_joint>front_left_wheel_joint</front_left_joint>
+      <front_right_joint>front_right_wheel_joint</front_right_joint>
+      <back_left_joint>rear_left_wheel_joint</back_left_joint>
+      <back_right_joint>rear_right_wheel_joint</back_right_joint>
+      <wheel_separation>0.2</wheel_separation>
+      <wheelbase>0.2</wheelbase>
+      <wheel_radius>0.05</wheel_radius>
+      <topic>/ep/cmd_vel</topic>
+      <odom_topic>/ep/odom</odom_topic>
+    </plugin>
+  </model>
+</sdf>

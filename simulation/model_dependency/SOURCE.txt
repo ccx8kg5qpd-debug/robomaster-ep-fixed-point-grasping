@@ -1,0 +1,4 @@
+repository=https://github.com/jeguzzi/robomaster_ros
+hash=c05a39d7f0fa8b3b277aa74826aa92e202efc987
+date=2026-06-05T10:20:55+02:00
+title=Update installation.rst

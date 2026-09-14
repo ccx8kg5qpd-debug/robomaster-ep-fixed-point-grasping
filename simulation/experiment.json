@@ -1,0 +1,12 @@
+{
+  "cycles": 5,
+  "autostart": true,
+  "a_world_m": [0.278, -0.001, 0.0725],
+  "b_world_m": [0.237, 0.1453, 0.0725],
+  "home_tip_xz_m": [0.235, 0.22],
+  "hover_tip_xz_m": [0.27, 0.16],
+  "grasp_tip_xz_m": [0.27, 0.088],
+  "cube_dimensions_m": [0.025, 0.025, 0.025],
+  "run_timeout_seconds": 600,
+  "refill_mode": "automatic_after_home"
+}

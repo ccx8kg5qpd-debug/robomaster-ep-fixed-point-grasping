@@ -1,0 +1,81 @@
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6529.169948268, "phase": "INITIAL_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "RUN_STARTED", "cycle": 1, "monotonic_seconds": 6529.170901462}
+{"event": "INITIAL_HOME_VERIFIED", "cycle": 1, "monotonic_seconds": 6533.446881434}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6533.598673694, "phase": "HOVER", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6538.218182616, "phase": "DESCEND", "target_tip_xz_m": [0.27, 0.088], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6543.788373144, "phase": "CLOSE", "target_tip_xz_m": [0.27, 0.088], "closure": 1.0}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6545.732293455, "phase": "HOLD", "target_tip_xz_m": [0.27, 0.088], "closure": 0.7229736166674302}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6549.078049385, "phase": "LIFT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7229736166674302}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6554.516251003, "phase": "TURN", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7229736166674302}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6564.553519626, "phase": "LOWER", "target_tip_xz_m": [0.27, 0.08998176598716191], "closure": 0.7229736166674302}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6568.999194643, "phase": "OPEN", "target_tip_xz_m": [0.27, 0.08998176598716191], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6572.362232296, "phase": "RETREAT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "B_PLACEMENT_VERIFIED", "cycle": 1, "monotonic_seconds": 6575.685412943, "box_world_m": [0.23996318151882126, 0.1428422691340322, 0.07249993297445646]}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6575.838765316, "phase": "RETURN_HEADING", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6583.200808211, "phase": "RETURN_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "CYCLE_HOME_VERIFIED", "cycle": 1, "monotonic_seconds": 6587.525519908, "completed_cycles": 1}
+{"event": "PHASE_ENTER", "cycle": 1, "monotonic_seconds": 6587.67947712, "phase": "REFILL_WAIT", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "SCENE_REFILL_REQUESTED_AFTER_HOME", "cycle": 1, "monotonic_seconds": 6587.680460266, "note": "Scene preparation only; not a grasp or transport action"}
+{"event": "SCENE_REFILL_ACKNOWLEDGED", "cycle": 1, "monotonic_seconds": 6588.203730354}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6589.721485751, "phase": "HOVER", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6594.299034733, "phase": "DESCEND", "target_tip_xz_m": [0.27, 0.088], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6599.829116349, "phase": "CLOSE", "target_tip_xz_m": [0.27, 0.088], "closure": 1.0}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6601.775119306, "phase": "HOLD", "target_tip_xz_m": [0.27, 0.088], "closure": 0.723159151245624}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6605.077097196, "phase": "LIFT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.723159151245624}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6610.516744973, "phase": "TURN", "target_tip_xz_m": [0.27, 0.16], "closure": 0.723159151245624}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6624.170315835, "phase": "LOWER", "target_tip_xz_m": [0.27, 0.09158823456124272], "closure": 0.723159151245624}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6628.646224618, "phase": "OPEN", "target_tip_xz_m": [0.27, 0.09158823456124272], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6632.004527179, "phase": "RETREAT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "B_PLACEMENT_VERIFIED", "cycle": 2, "monotonic_seconds": 6635.324513488, "box_world_m": [0.23957821607176982, 0.13975639181456467, 0.07249996744055914]}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6635.475897232, "phase": "RETURN_HEADING", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6642.681723564, "phase": "RETURN_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "CYCLE_HOME_VERIFIED", "cycle": 2, "monotonic_seconds": 6646.968600293, "completed_cycles": 2}
+{"event": "PHASE_ENTER", "cycle": 2, "monotonic_seconds": 6647.119989956, "phase": "REFILL_WAIT", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "SCENE_REFILL_REQUESTED_AFTER_HOME", "cycle": 2, "monotonic_seconds": 6647.120931855, "note": "Scene preparation only; not a grasp or transport action"}
+{"event": "SCENE_REFILL_ACKNOWLEDGED", "cycle": 2, "monotonic_seconds": 6647.610275176}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6649.155747481, "phase": "HOVER", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6653.779558305, "phase": "DESCEND", "target_tip_xz_m": [0.27, 0.088], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6659.31137098, "phase": "CLOSE", "target_tip_xz_m": [0.27, 0.088], "closure": 1.0}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6661.291550753, "phase": "HOLD", "target_tip_xz_m": [0.27, 0.088], "closure": 0.7261867331426216}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6664.596849447, "phase": "LIFT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7261867331426216}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6670.08288422, "phase": "TURN", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7261867331426216}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6679.83846568, "phase": "LOWER", "target_tip_xz_m": [0.27, 0.09003776248645058], "closure": 0.7261867331426216}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6684.319028625, "phase": "OPEN", "target_tip_xz_m": [0.27, 0.09003776248645058], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6687.600173427, "phase": "RETREAT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "B_PLACEMENT_VERIFIED", "cycle": 3, "monotonic_seconds": 6690.889473677, "box_world_m": [0.23991212518777158, 0.14178842090993715, 0.07249997848190404]}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6691.041973048, "phase": "RETURN_HEADING", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6698.164825334, "phase": "RETURN_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "CYCLE_HOME_VERIFIED", "cycle": 3, "monotonic_seconds": 6702.485037271, "completed_cycles": 3}
+{"event": "PHASE_ENTER", "cycle": 3, "monotonic_seconds": 6702.640677444, "phase": "REFILL_WAIT", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "SCENE_REFILL_REQUESTED_AFTER_HOME", "cycle": 3, "monotonic_seconds": 6702.641561198, "note": "Scene preparation only; not a grasp or transport action"}
+{"event": "SCENE_REFILL_ACKNOWLEDGED", "cycle": 3, "monotonic_seconds": 6703.12460986}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6704.67603266, "phase": "HOVER", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6709.25490332, "phase": "DESCEND", "target_tip_xz_m": [0.27, 0.088], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6714.795756604, "phase": "CLOSE", "target_tip_xz_m": [0.27, 0.088], "closure": 1.0}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6716.734715549, "phase": "HOLD", "target_tip_xz_m": [0.27, 0.088], "closure": 0.7228631640997019}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6720.077025458, "phase": "LIFT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7228631640997019}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6725.516112621, "phase": "TURN", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7228631640997019}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6738.207927555, "phase": "LOWER", "target_tip_xz_m": [0.27, 0.09386321353719194], "closure": 0.7228631640997019}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6742.650598223, "phase": "OPEN", "target_tip_xz_m": [0.27, 0.09386321353719194], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6746.000981629, "phase": "RETREAT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "B_PLACEMENT_VERIFIED", "cycle": 4, "monotonic_seconds": 6749.292905546, "box_world_m": [0.2450266899891736, 0.13433985098535275, 0.07249995854977648]}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6749.446650572, "phase": "RETURN_HEADING", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6756.637306169, "phase": "RETURN_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "CYCLE_HOME_VERIFIED", "cycle": 4, "monotonic_seconds": 6760.926798728, "completed_cycles": 4}
+{"event": "PHASE_ENTER", "cycle": 4, "monotonic_seconds": 6761.080964148, "phase": "REFILL_WAIT", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "SCENE_REFILL_REQUESTED_AFTER_HOME", "cycle": 4, "monotonic_seconds": 6761.081893707, "note": "Scene preparation only; not a grasp or transport action"}
+{"event": "SCENE_REFILL_ACKNOWLEDGED", "cycle": 4, "monotonic_seconds": 6761.563905315}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6763.118228556, "phase": "HOVER", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6767.741955862, "phase": "DESCEND", "target_tip_xz_m": [0.27, 0.088], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6773.274517107, "phase": "CLOSE", "target_tip_xz_m": [0.27, 0.088], "closure": 1.0}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6775.251742907, "phase": "HOLD", "target_tip_xz_m": [0.27, 0.088], "closure": 0.7264394461436765}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6778.556576069, "phase": "LIFT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7264394461436765}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6783.99641322, "phase": "TURN", "target_tip_xz_m": [0.27, 0.16], "closure": 0.7264394461436765}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6794.469282848, "phase": "LOWER", "target_tip_xz_m": [0.27, 0.09002519503816518], "closure": 0.7264394461436765}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6798.950292877, "phase": "OPEN", "target_tip_xz_m": [0.27, 0.09002519503816518], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6802.277567372, "phase": "RETREAT", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "B_PLACEMENT_VERIFIED", "cycle": 5, "monotonic_seconds": 6805.532059657, "box_world_m": [0.239141686297472, 0.14268182002274626, 0.07249997918567767]}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6805.683567485, "phase": "RETURN_HEADING", "target_tip_xz_m": [0.27, 0.16], "closure": 0.6}
+{"event": "PHASE_ENTER", "cycle": 5, "monotonic_seconds": 6812.800094828, "phase": "RETURN_HOME", "target_tip_xz_m": [0.235, 0.22], "closure": 0.6}
+{"event": "CYCLE_HOME_VERIFIED", "cycle": 5, "monotonic_seconds": 6817.093299376, "completed_cycles": 5}
+{"event": "FIVE_CYCLES_COMPLETED_AT_HOME", "cycle": 5, "monotonic_seconds": 6817.095302357}

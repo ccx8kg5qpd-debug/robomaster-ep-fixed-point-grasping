@@ -35,6 +35,12 @@ on different assigned responsibilities and reflections.
 - `reports/`: five individual English LaTeX reports and compiled PDFs.
 - `docs/`: course handout copy and traceability notes.
 
+The final report set is under `reports/final_2026-09-13/`. Yongyue Qi's report
+uses the QYY navy/teal/gold personal template. The other four reports use distinct
+simulation-blueprint, control-journal, hardware field-note and operations-manual
+styles, respectively. Each report includes this shared repository link and the
+captured commit-history evidence.
+
 ## Version-history note
 
 The experiment was completed before this GitHub repository was assembled.

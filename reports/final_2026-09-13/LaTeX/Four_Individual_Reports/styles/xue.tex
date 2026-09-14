@@ -1,0 +1,17 @@
+% Yutong Xue's hardware field-notebook report style.
+\input{preamble}
+\definecolor{accent}{HTML}{286043}
+\definecolor{muted}{HTML}{5F685E}
+\definecolor{light}{HTML}{F1F5E9}
+\definecolor{fieldtan}{HTML}{D7BE8A}
+\geometry{left=27mm,right=20mm,top=21mm,bottom=22mm,headheight=16pt,headsep=7mm}
+\hypersetup{linkcolor=accent,urlcolor=accent}
+\titleformat{\section}{\Large\sffamily\bfseries\color{accent}}{\fcolorbox{accent}{light}{\thesection}}{0.75em}{}
+\titleformat{\subsection}{\normalsize\sffamily\bfseries\color{accent}}{\thesubsection}{0.55em}{}
+\fancyhead[L]{\small\sffamily\bfseries\color{accent}HARDWARE FIELD NOTE / E2}
+\fancyhead[R]{\small\sffamily\color{muted}\studentname}
+\fancyfoot[L]{\scriptsize\sffamily\color{muted}Waypoint and gripper verification record}
+\fancyfoot[R]{\small\sffamily\bfseries\color{accent}\thepage}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\reportnote}[1]{\par\smallskip\noindent\colorbox{light}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small\textcolor{accent}{\textbf{FIELD CHECK}}\quad #1}}\par\smallskip}
+\renewcommand{\reporttitle}[1]{\vspace*{2mm}{\small\sffamily\bfseries\color{accent}FIELD NOTE 02 / PHYSICAL SYSTEM}\par\vspace{3mm}{\color{fieldtan}\rule{\linewidth}{3pt}}\par\vspace{5mm}{\fontsize{22}{27}\selectfont\sffamily\bfseries #1\par}\vspace{4mm}{\large\sffamily\studentname\enspace\studentcn\par}{\small Student ID: \studentid\quad|\quad Individual hardware notebook}\par\vspace{4mm}}

@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "log_directory": "/home/nvidia/robomaster_ep_results/five_round_recording_20260913/logs/20260913_153855_682865",
+  "video": "/home/nvidia/robomaster_ep_results/five_round_recording_20260913/RoboMaster_EP_五轮完整演示_侧面近景.mp4",
+  "started_unix": 1789285256.8296778,
+  "ended_unix": 1789285586.4084327,
+  "crop": [
+    54,
+    212,
+    1448,
+    816
+  ],
+  "fps": 15,
+  "playback_speed": 1,
+  "untrimmed": true,
+  "scene_refill": "Only after verified return home between cycles",
+  "ffmpeg_exit": 0
+}

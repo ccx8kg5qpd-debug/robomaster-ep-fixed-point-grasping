@@ -15,8 +15,7 @@ arm because the originally specified single-arm equipment was unavailable.
 | Lintai Bao | 24020036004 | Hardware SDK communication, task sequence and chassis turn/return |
 
 Xue and Bao jointly performed the physical setup and integrated hardware trials.
-All five members share the overall project outcome; the individual reports focus
-on different assigned responsibilities and reflections.
+All five members share the overall project outcome.
 
 ## Verified outcome
 
@@ -32,17 +31,13 @@ on different assigned responsibilities and reflections.
 - `hardware/`: RoboMaster Python SDK program used for the final manual-confirmation run.
 - `results/`: saved machine-readable simulation logs and validation notes.
 - `media/`: complete simulation recording, real-hardware demonstration and media notes.
-- `reports/`: five individual English LaTeX reports and compiled PDFs.
-- `docs/`: course handout copy and traceability notes.
+- `reports/group/`: the English group report, self-contained Tau-based LaTeX
+  source, figures, template license and QA summary.
+- `docs/`: copy of the original course handout.
 
-The final report set is under `reports/final_2026-09-13/`. Yongyue Qi's report
-uses the QYY navy/teal/gold personal template. The other four reports use distinct
-simulation-blueprint, control-journal, hardware field-note and operations-manual
-styles, respectively. Each report includes this shared repository link and the
-captured commit-history evidence.
-
-The English brief group report required by the experiment handout is under
-`reports/group/`, together with its LaTeX source, assets and QA summary.
+The brief group report required by the experiment handout is under
+`reports/group/`. Personal reports are intentionally excluded from this shared
+group-project repository.
 
 ## Version-history note
 

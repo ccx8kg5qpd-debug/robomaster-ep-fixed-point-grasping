@@ -31,7 +31,7 @@ on different assigned responsibilities and reflections.
 - `simulation/`: ROS 2/Gazebo controller, launch/configuration and model resources.
 - `hardware/`: RoboMaster Python SDK program used for the final manual-confirmation run.
 - `results/`: saved machine-readable simulation logs and validation notes.
-- `media/`: simulation recording and media notes. The real-hardware video is pending.
+- `media/`: complete simulation recording, real-hardware demonstration and media notes.
 - `reports/`: five individual English LaTeX reports and compiled PDFs.
 - `docs/`: course handout copy and traceability notes.
 

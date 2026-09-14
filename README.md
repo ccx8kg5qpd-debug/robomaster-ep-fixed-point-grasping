@@ -21,7 +21,12 @@ All five members share the overall project outcome.
 
 - Recorded simulation: 5/5 successful placements and 5/5 verified returns home.
 - Team-observed hardware test on 12 September 2026: 5/5 successful transfers,
-  with no observed abnormality.
+  with no observed abnormality in those nominal trials.
+- Additional hardware abnormal test H-01: the operator deliberately removes the
+  object in the final video segment. The empty grasp/lift is excluded from the
+  nominal five-trial denominator. No later transfer is visible in the clip.
+  See [the abnormal-test record](results/abnormal_test_record.md) for observed
+  behavior, the manual-confirmation guard, and evidence limits.
 - The supplied hardware evidence is observational. No measured hardware position
   error, timing, force or payload-mass record is available.
 
@@ -42,7 +47,7 @@ group-project repository.
 ## Version-history note
 
 The experiment was completed before this GitHub repository was assembled.
-Therefore, the commit history records the genuine sequence used on 13 September
+Therefore, the commit history records the genuine sequence used on 13--14 September
 2026 to review, organize, document and publish the existing project materials; it
 must not be interpreted as a contemporaneous history of every experimental edit.
 No historical commit dates or authors have been fabricated.

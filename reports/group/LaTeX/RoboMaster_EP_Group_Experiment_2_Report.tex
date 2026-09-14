@@ -1,0 +1,396 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{fontspec,xeCJK}
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,
+  ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf,Scale=.92]
+\setmonofont{Inconsolatazi4-Regular.otf}[BoldFont=Inconsolatazi4-Bold.otf,
+  Scale=.88,Mapping=,Ligatures=NoCommon]
+\setCJKmainfont{FandolSong-Regular.otf}
+\setCJKsansfont{FandolSong-Regular.otf}
+\usepackage[table]{xcolor}
+\usepackage[left=21mm,right=21mm,top=22mm,bottom=21mm]{geometry}
+\usepackage{graphicx,booktabs,tabularx,array,float,caption,enumitem}
+\usepackage{fancyhdr,titlesec,lastpage,microtype,hyperref,tikz,pgfplots}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\pgfplotsset{compat=1.18}
+\graphicspath{{assets/}}
+
+\definecolor{Navy}{HTML}{102A43}
+\definecolor{Blue}{HTML}{146B8C}
+\definecolor{Teal}{HTML}{168C8C}
+\definecolor{Gold}{HTML}{D9A441}
+\definecolor{Mist}{HTML}{F1F6F8}
+\definecolor{Sky}{HTML}{DCEEF4}
+\definecolor{Text}{HTML}{263746}
+\definecolor{Muted}{HTML}{627485}
+\definecolor{Green}{HTML}{2C7A4B}
+
+\hypersetup{colorlinks=true,linkcolor=Blue,urlcolor=Teal,
+  pdftitle={RoboMaster EP Fixed-Point Grasping Group Experiment Report},
+  pdfauthor={Yongyue Qi, Bo Ning, Junbiao Huang, Yutong Xue, Lintai Bao},
+  pdfsubject={Robotics Integration Group Project I Experiment 2}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4.5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\code}[1]{{\small\nolinkurl{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\fancyhead[L]{\small\sffamily\bfseries\color{Navy}GROUP E5 / EXPERIMENT 2}
+\fancyhead[R]{\small\sffamily\color{Muted}RoboMaster EP Fixed-Point Grasping}
+\fancyfoot[L]{\scriptsize\sffamily\color{Muted}Robotics Integration Group Project I}
+\fancyfoot[R]{\scriptsize\sffamily\color{Muted}Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\titleformat{\section}{\sffamily\Large\bfseries\color{Navy}}
+  {\colorbox{Teal}{\textcolor{white}{\thesection}}}{0.7em}{}
+\titleformat{\subsection}{\sffamily\normalsize\bfseries\color{Blue}}
+  {\thesubsection}{0.55em}{}
+\titlespacing*{\section}{0pt}{10pt}{7pt}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\captionsetup{font=small,labelfont={bf,sf,color=Navy},textfont={color=Muted},skip=5pt}
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+
+\newcommand{\metric}[2]{\colorbox{Navy}{\parbox[c][20mm][c]{.205\textwidth}{
+  \centering\sffamily\textcolor{Sky}{\scriptsize\MakeUppercase{#1}}\\[1.5pt]
+  \textcolor{white}{\large\bfseries #2}}}}
+\newcommand{\evidence}[1]{\par\smallskip\noindent\fcolorbox{Teal}{Mist}{
+  \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule-3pt}{\small\raggedright\textbf{Evidence boundary.} #1}}\par\smallskip}
+\tikzset{flow/.style={draw=Blue,fill=Mist,rounded corners=2pt,minimum height=10mm,
+  text width=27mm,align=center,font=\small},arr/.style={-{Latex[length=2mm]},thick,draw=Teal}}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\pagecolor{Navy}\color{white}\thispagestyle{empty}
+\vspace*{15mm}
+{\sffamily\small\bfseries\color{Gold}ROBOTICS INTEGRATION GROUP PROJECT I\par}
+\vspace{7mm}
+{\sffamily\fontsize{29}{34}\selectfont\bfseries Fixed-Point Grasping\\with RoboMaster EP\par}
+\vspace{3mm}
+{\sffamily\fontsize{20}{25}\selectfont\color{Sky}Experiment 2 Group Report\par}
+\vspace{8mm}{\color{Teal}\rule{\linewidth}{2.2pt}}\vspace{10mm}
+
+\metric{Simulation}{5 / 5}\hfill
+\metric{Mean error}{4.358 mm}\hfill
+\metric{Hardware}{5 / 5}\hfill
+\metric{Repository}{Public}
+
+\vfill
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{@{}>{\sffamily\bfseries\color{Sky}}p{31mm}Y@{}}
+Team members & Yongyue Qi (24020036050)\\
+& Bo Ning (24020036049)\\
+& Junbiao Huang (24020036027)\\
+& Yutong Xue (24020036072)\\
+& Lintai Bao (24020036004)\\[2mm]
+Experiment & S16--S20 / E5\\
+Platform & DJI RoboMaster EP arm and gripper\\
+Report date & 13 September 2026\\
+Repository & \href{https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}{github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}\\
+\end{tabularx}
+\vspace{7mm}{\color{Gold}\rule{\linewidth}{1.2pt}}
+\end{titlepage}
+
+\hypersetup{pageanchor=true}
+\nopagecolor\color{Text}
+\setcounter{page}{1}
+
+\section{Experiment Scope and Team Organization}
+\subsection{Objective and equipment adaptation}
+The task is fixed-point pick-and-place without visual localization: return home,
+approach point A, descend, grasp, lift, move to point B, release and return home.
+The required acceptance target is at least four successful transfers in five
+consecutive trials, together with collision, joint-limit and failure checks.
+
+Because the originally specified standalone mechArm 270 equipment was unavailable,
+the group used the arm and gripper mounted on a DJI RoboMaster EP chassis. The
+simulation uses ROS 2 Humble, Gazebo Fortress and custom kinematics/control; the
+physical test uses the RoboMaster Python SDK. This report treats that as a
+platform adaptation, not as proof of an unchanged ROS 2 hardware backend.
+
+\subsection{Division of work}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{30mm}p{27mm}Y@{}}\toprule
+Member & Area & Main responsibility\\\midrule
+Bo Ning & Simulation & Environment, scene, models, resources and launch setup.\\
+Junbiao Huang & Simulation & Motion program, feedback logic and repeated-cycle debugging.\\
+Yongyue Qi & Analysis & Result/log audit, error analysis, report materials and repository integration.\\
+Yutong Xue & Hardware & Pick/release waypoints, approach/lift height and gripper-retention checks.\\
+Lintai Bao & Hardware & SDK communication, task sequence, chassis turn/return and exception handling.\\\bottomrule
+\end{tabularx}
+\end{center}
+Xue and Bao jointly performed physical setup, parameter review and integrated
+trials. Their scopes distinguish technical focus without reducing either member
+to a passive observer. All five members share the final project outcome.
+
+\subsection{Outcome summary}
+The recorded simulation completed five placements and verified home after all
+five cycles. The team confirmed five successful hardware transfers on 12
+September 2026 with no observed abnormality. Numerical accuracy is available for
+the simulation only; the hardware result is observational.
+
+\evidence{The group did not supply measured hardware position error, force,
+payload mass or per-cycle duration. Those quantities are not inferred from a 5/5
+observed outcome.}
+\clearpage
+
+\section{System Principle and Task Sequence}
+\subsection{Two implementations of the same task intent}
+\begin{center}
+\begin{tikzpicture}[node distance=5mm]
+\node[flow] (home) {Home};
+\node[flow,right=of home] (approach) {Approach A\\and descend};
+\node[flow,right=of approach] (grip) {Grip, verify\\and lift};
+\node[flow,below=10mm of grip] (transfer) {Turn / transfer\\to B};
+\node[flow,left=of transfer] (release) {Release\\and retreat};
+\node[flow,left=of release] (return) {Restore heading\\and home};
+\draw[arr] (home)--(approach); \draw[arr] (approach)--(grip);
+\draw[arr] (grip)--(transfer); \draw[arr] (transfer)--(release);
+\draw[arr] (release)--(return); \draw[arr] (return)--(home);
+\end{tikzpicture}
+\captionof{figure}{Shared task intent. Simulation and hardware implement the
+sequence through different control interfaces and cycle boundaries.}
+\end{center}
+
+\subsection{Simulation kinematics and feedback}
+The simulated arm is represented by two independent arm variables, $r$ and $l$,
+with linked joint coordinates such as
+\[
+q_{\mathrm{arm1}}=r,\qquad q_{\mathrm{arm2}}=l-r,\qquad
+q_{\mathrm{endpoint}}=-l,\qquad q_{\mathrm{rod}}=l.
+\]
+The inverse calculation minimizes fingertip-centre error in the model's $x$--$z$
+plane and rejects residuals above 0.002 m or solutions outside the saved joint and
+coupling limits. Each commanded joint transition uses the quintic blend
+$s(u)=10u^3-15u^4+6u^5$ to avoid discontinuous reference velocity.
+
+Fresh bilateral gripper contact, retained-object height and placement conditions
+gate later phases. Placement requires horizontal error below 23 mm, height error
+below 8 mm and table contact. Home acceptance separately checks heading,
+translation and arm error for a stable interval.
+
+\subsection{Physical control workflow}
+The final hardware script initializes the RoboMaster in AP connection mode and
+commands the arm, gripper and chassis through the Python SDK. After each lift it
+stops the chassis, clears old keyboard input and waits up to 30 s for a fresh
+human confirmation that the object is retained. Only then is chassis rotation
+allowed. Odd cycles turn $+32^\circ$ from A to B; even cycles turn $-32^\circ$
+from B to A. After cycle 5 the remaining heading is restored before the arm moves
+through HIGH to HOME.
+
+The confirmation is a supervised safety checkpoint, not a force or vision
+measurement. Cleanup pauses the gripper, commands zero wheel speed and closes the
+SDK connection, but it is not described as a certified emergency-stop system.
+\clearpage
+
+\section{Simulation Development and Results}
+\subsection{Scene, resources and execution}
+The scene includes a $1.6\times1.2\times0.05$ m table, a 25 mm cube and fixed
+points $A=(0.278,-0.001,0.0725)$ m and $B=(0.237,0.1453,0.0725)$ m. The cube's
+simulation mass is 50 g; that setting is not a measurement of the real object.
+The launch file starts Gazebo, the bridge, model spawning, state feedback and the
+task controller. Bundled community model resources are attributed to
+\href{https://github.com/jeguzzi/robomaster_ros}{jeguzzi/robomaster\_ros}, archived
+at commit \code{c05a39d7f0fa}.
+
+\begin{center}
+\includegraphics[width=.76\linewidth,trim=0 20 0 210,clip]{simulation_lift.jpg}
+\captionof{figure}{Recorded simulation frame during a lifted-object phase. This
+image is simulation evidence, not a photograph of hardware accuracy.}
+\end{center}
+
+\subsection{Five-cycle recorded result}
+\begin{center}\small
+\begin{tabular}{@{}crrrcc@{}}\toprule
+Cycle & Error (mm) & Heading ($^\circ$) & Time (s) & Placed & Home\\\midrule
+1 & 2.274 & 0.445 & 67.01 & Yes & Yes\\
+2 & 5.604 & 0.329 & 59.72 & Yes & Yes\\
+3 & 4.192 & 0.404 & 60.92 & Yes & Yes\\
+4 & 4.577 & 0.459 & 61.09 & Yes & Yes\\
+5 & 5.144 & 0.405 & 61.29 & Yes & Yes\\\bottomrule
+\end{tabular}
+\end{center}
+The mean horizontal error was 4.358 mm and the maximum was 5.604 mm. The five
+cycle intervals totalled 310.03 s; the run from initial home entry to final
+completion lasted 318.02 s. The trajectory file contains 4475 rows over a longer
+span because it includes idle recording, so row span is not used as task time.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=.78\linewidth,height=48mm,ybar,bar width=8pt,
+  xlabel={Cycle},ylabel={Horizontal error (mm)},xmin=.5,xmax=5.5,ymin=0,ymax=7,
+  xtick={1,2,3,4,5},grid=major,grid style={draw=Sky},axis line style={draw=Muted},
+  tick label style={font=\small}]
+\addplot[fill=Teal,draw=Teal] coordinates {(1,2.274)(2,5.604)(3,4.192)(4,4.577)(5,5.144)};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Horizontal placement error in the main recorded simulation run.}
+\end{center}
+\clearpage
+
+\section{Hardware Validation and Video Evidence}
+\subsection{Final physical parameters}
+\begin{center}\small
+\begin{tabular}{@{}lrrl@{}}\toprule
+Waypoint & $x$ (mm) & $y$ (mm) & Function\\\midrule
+HOME & 82 & 80 & Retracted high position\\
+HIGH & 191 & 80 & Extended high position\\
+HOVER & 191 & $-1$ & Approach and retained-object height\\
+GRASP & 191 & $-51$ & Pick and release level\\\bottomrule
+\end{tabular}
+\end{center}
+The arm descends from HOVER to GRASP, closes the gripper at SDK power 100, lifts
+50 mm and waits for human confirmation. The final hardware workflow alternates
+A$\rightarrow$B and B$\rightarrow$A because it does not automatically replenish
+the object. This differs from the simulation, where a separate refill node resets
+the cube to A only between cycles 1--4 after home verification.
+
+\subsection{Observed five-cycle result}
+\begin{center}\small
+\begin{tabular}{@{}ccccc@{}}\toprule
+Cycle & Direction & Lift confirmed & Transfer & Abnormality\\\midrule
+1 & A$\rightarrow$B & Yes & Successful & None observed\\
+2 & B$\rightarrow$A & Yes & Successful & None observed\\
+3 & A$\rightarrow$B & Yes & Successful & None observed\\
+4 & B$\rightarrow$A & Yes & Successful & None observed\\
+5 & A$\rightarrow$B & Yes & Successful & None observed\\\bottomrule
+\end{tabular}
+\end{center}
+This table records the team's confirmed outcome, not a sensor-generated hardware
+test log. No hardware placement-error or timing series is available.
+
+\subsection{Real-device video delivered separately}
+The real-device video is a separate submission artifact and is not embedded in
+this PDF. Visual review confirms that it shows the RoboMaster EP arm, gripper,
+target cubes and operator terminal.
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{37mm}Y@{}}\toprule
+Field & Recorded value\\\midrule
+Archive filename & \code{RoboMaster_EP_Hardware_Demonstration.mp4}\\
+Original filename & \code{b635ef9bacf591f62e65e10741d55908.mp4}\\
+Duration and frame & 74.87 s; 1280$\times$720 at 29.97 fps\\
+Encoding & HEVC Main video; AAC LC stereo audio\\
+Size & 8,024,795 bytes\\
+SHA-256 & \code{614a8eb55d8883cce4494496a199c828bb679b693f58a325319570a89fad6a6e}\\\bottomrule
+\end{tabularx}
+\end{center}
+\clearpage
+
+\section{Problems, Solutions and Evidence Limits}
+\subsection{Model resources and reference frames}
+Early model problems included unresolved mesh paths and inconsistent end-effector
+references. The final archive bundles the model dependency and provides
+\code{prepare_paths.py} to construct a runtime copy with local mesh paths. The
+kinematic calculation uses the forward ends of gripper link 4 rather than a rear
+linkage. This separates a resource-resolution failure from a control failure.
+
+\subsection{Unstable lift and false closure}
+A gripper-close command is not evidence that an object is held. The final
+simulation combines bilateral fresh contact, a small closure preload, a hold
+interval and an object-height check before transfer. The physical script uses a
+50 mm lift followed by a fresh human confirmation. Neither mechanism proves
+gripping force, but each prevents a simple command-completion flag from being
+treated as a successful grasp.
+
+\subsection{Repeated-cycle state and heading restoration}
+Earlier repeated sequences could drift or stop after one cycle. The final
+simulation explicitly returns heading and home, records five placement checks,
+five home checks and four refill acknowledgements, and ends after cycle 5 without
+an extra refill. The physical script alternates directions and compensates the
+remaining heading after cycle 5.
+
+\subsection{Abnormal-case evidence}
+The archived notes record eight passing offline tests across model and five-cycle
+checks. An unreachable target such as $(10,10,0.6)$ is rejected by the kinematic
+solver with a \code{ValueError}; joint and coupling limits are checked before
+motion. Runtime stale-feedback and phase-timeout guards also exist in the
+controller. These are useful safeguards, but no separate system-level fault-
+injection run or individual safety-check record was supplied.
+
+\subsection{Deviations from the handout}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{38mm}Y@{}}\toprule
+Handout expectation & Evidence status\\\midrule
+mechArm 270 hardware & Replaced by RoboMaster EP because of equipment availability.\\
+Same ROS 2 interface for hardware & Not demonstrated; hardware uses the RoboMaster Python SDK.\\
+Parameter-only migration & Not demonstrated across the different control backends.\\
+Each member's individual safety check & No individual check record supplied.\\
+At least 4/5 transfers & Met in both recorded simulation and team-observed hardware outcome.\\\bottomrule
+\end{tabularx}
+\end{center}
+These deviations are reported rather than hidden. They should be considered when
+interpreting the result and when the instructor evaluates platform equivalence.
+\clearpage
+
+\section{Repository and Version Traceability}
+The public shared repository is
+\href{https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}
+{github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}. The experiment
+was completed before repository assembly, so the history below records the real
+review, organization and publication sequence on 13 September 2026; it is not
+presented as a fabricated history of the experimental development itself.
+
+\begin{center}
+\includegraphics[width=.94\linewidth]{commit_history_current.png}
+\captionof{figure}{Ten repository commits visible after the real-device video
+was uploaded and before this group report was added.}
+\end{center}
+
+The individual reports contain an earlier five-commit snapshot that was accurate
+at their capture time. Later commits add the report set, update public-repository
+wording and add the real-device video. Both images therefore document genuine
+states of the same history at different publication stages.
+\clearpage
+
+\section{Submission Manifest and Conclusion}
+\subsection{Materials required by the experiment handout}
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{49mm}p{24mm}Y@{}}\toprule
+Required material & Status & Location in group package\\\midrule
+ROS 2 program, launch and parameters & Included & \code{01_simulation/}\\
+Simulation model and point/height setup & Included & \code{01_simulation/model_dependency/} and configuration files\\
+Simulation demonstration video & Included & \code{03_videos/simulation/}\\
+Real-device demonstration video & Included & \code{03_videos/hardware/}\\
+Five-cycle result records & Included & \code{04_results/20260913_153855_682865/}\\
+Abnormal-test record & Included with limits & \code{04_results/validation_record.md} and report Section 5.4\\
+Brief group experiment report & Included & \code{05_group_report/}\\
+Five individual reports & Included & \code{06_individual_reports/}\\
+GitHub link and commit evidence & Included & Report Section 6 and repository README\\\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Reproducibility notes}
+The simulation targets ROS 2 Humble and Gazebo Fortress on the team's Jetson
+Linux environment. The archived startup wrapper contains a workspace path that
+must be adapted on another machine. The model dependency is bundled with source
+attribution. Saved \code{results.json}, \code{events.jsonl} and
+\code{trajectory.csv} support independent checking of the reported simulation
+numbers without rerunning Gazebo.
+
+\subsection{Conclusion}
+The available evidence supports five successful simulation cycles with home
+verification and five team-confirmed physical transfers without observed
+abnormality. The project demonstrates a complete fixed-point sequence on the
+available RoboMaster EP platform. Its strongest quantitative evidence is the
+saved simulation record; the physical result is supported by the team-observed
+outcome and a separate real-device video, not by instrumented precision data.
+
+\subsection{Sources}
+{\footnotesize
+[1] Course handout, \emph{Robot Integration Group Project I: Fixed-Point
+Robotic-Arm Grasping}, S16--S20 / E5, including the submission-material list.\par
+[2] Public team repository, \href{https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}{robomaster-ep-fixed-point-grasping}, main branch, 13 September 2026.\par
+[3] Primary simulation record \code{20260913_153855_682865}: results, events and
+trajectory; comparison record \code{20260913_151835_077998}.\par
+[4] Real-device video metadata and SHA-256 recorded in
+\code{media/hardware/README.md}.\par
+[5] Community model source,
+\href{https://github.com/jeguzzi/robomaster_ros}{jeguzzi/robomaster\_ros}, archived
+commit \code{c05a39d7f0fa}.\par
+}
+\end{document}

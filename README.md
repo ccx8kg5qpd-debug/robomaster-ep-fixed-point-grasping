@@ -41,6 +41,9 @@ simulation-blueprint, control-journal, hardware field-note and operations-manual
 styles, respectively. Each report includes this shared repository link and the
 captured commit-history evidence.
 
+The English brief group report required by the experiment handout is under
+`reports/group/`, together with its LaTeX source, assets and QA summary.
+
 ## Version-history note
 
 The experiment was completed before this GitHub repository was assembled.

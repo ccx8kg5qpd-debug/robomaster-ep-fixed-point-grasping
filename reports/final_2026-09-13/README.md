@@ -32,12 +32,12 @@ For the other reports, compile the selected student `.tex` file from
 `LaTeX/Four_Individual_Reports/` so that the shared preamble, personal style,
 assets and supporting data resolve by relative path.
 
-## Outstanding submission item
+## Real-device video
 
-The actual RoboMaster EP hardware video has not yet been provided. The repository
-contains the complete simulation recording and a clearly labelled pending marker
-for the hardware recording. Add the hardware video in a later commit rather than
-replacing the simulation video or describing unrecorded measurements.
+The real-device demonstration is stored separately in the public repository under
+`media/hardware/` and in the complete group submission under
+`03_videos/hardware/`. It is not embedded in the PDFs or duplicated inside this
+report-only directory.
 
 ## Verification
 

@@ -1,7 +1,10 @@
 {
-  "pages": 8,
+  "template": "Tau Class v2.6.0, adapted under CC BY 4.0",
+  "pages": 3,
   "blank_pages": [],
   "missing_required_text": [],
   "todo_count": 0,
-  "pending_count": 0
+  "pending_count": 0,
+  "individual_report_entries": 0,
+  "visual_review": "passed"
 }

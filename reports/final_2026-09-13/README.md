@@ -2,7 +2,7 @@
 
 Repository: https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping
 
-The repository is private and shared by the five-person group. The five reports
+The repository is public and shared by the five-person group. The five reports
 reference the same group project and distinguish each member's assigned scope.
 
 ## Final PDFs

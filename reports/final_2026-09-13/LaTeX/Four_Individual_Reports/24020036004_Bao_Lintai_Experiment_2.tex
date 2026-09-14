@@ -33,7 +33,7 @@ Hardware alternates A$\rightarrow$B and B$\rightarrow$A without automatic object
 \clearpage
 \section{Confirmation checkpoint and stopping logic}
 \subsection{Preventing transfer with an uncertain grasp}
-After the 50 mm lift, the script stops base motion and clears pending terminal input. It then waits up to 30 s for a fresh \code{y}. Clearing old input matters: a key pressed before seeing the lifted object should not count as a new confirmation. The human observer judges whether the cube has actually been retained before any transfer rotation is permitted.
+After the 50 mm lift, the script stops base motion and clears previously buffered terminal input. It then waits up to 30 s for a fresh \code{y}. Clearing old input matters: a key pressed before seeing the lifted object should not count as a new confirmation. The human observer judges whether the cube has actually been retained before any transfer rotation is permitted.
 For an individual trial, one hardware member handles controls while the other watches the object and working area. Both participate in tuning and integrated testing rather than holding permanent operator/helper roles. The checkpoint joins Xue's retention checks to my transfer logic: rotation should not begin before the current grasp has been clearly confirmed.
 \begin{center}
 \begin{tikzpicture}[node distance=7mm]

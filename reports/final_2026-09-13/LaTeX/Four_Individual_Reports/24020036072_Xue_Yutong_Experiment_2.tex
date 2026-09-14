@@ -51,7 +51,7 @@ After release & Does the object remain at the destination? & Release level, open
 \end{tabularx}
 \end{center}
 \subsection{Why confirmation follows the lift}
-An earlier, abandoned checking script reported a closed gripper but no object. This illustrates why closure is not equivalent to retention. The final manual script instead lifts to HOVER, stops the chassis, clears pending terminal input and waits up to 30 s for a fresh \code{y}. The decision is based on the current lifted object, not an earlier key press.
+An earlier, abandoned checking script reported a closed gripper but no object. This illustrates why closure is not equivalent to retention. The final manual script instead lifts to HOVER, stops the chassis, clears previously buffered terminal input and waits up to 30 s for a fresh \code{y}. The decision is based on the current lifted object, not an earlier key press.
 
 If confirmation is absent, no transfer turn or automatic homing is commanded; the script stops above the source and performs cleanup. This limits additional motion with an uncertain grasp. The operator and observer must communicate clearly, and object adjustment must not be attempted by hand while the task can resume.
 \subsection{Two people jointly test the mechanism}

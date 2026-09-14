@@ -42,12 +42,12 @@
 \author[1]{Lintai Bao}
 \affil[1]{Group E5 (S16--S20), Robotics Integration Group Project I}
 
-\dates{Report date: 13 September 2026 \textbullet\ Platform: RoboMaster EP arm and gripper}
+\dates{Revised: 14 September 2026 \textbullet\ Hardware trials: 12 September 2026}
 \docinfo{Student IDs: Yongyue Qi 24020036050; Bo Ning 24020036049;
 Junbiao Huang 24020036027; Yutong Xue 24020036072; Lintai Bao
 24020036004. Layout adapted from Tau Class v2.6.0 (CC BY 4.0).}
 \footinfo{RoboMaster EP \textbullet\ Experiment 2}
-\theday{13 September 2026}
+\theday{14 September 2026}
 \organization{Robotics Integration Group Project I}
 \leadauthor{Group E5}
 
@@ -57,8 +57,9 @@ the arm and gripper mounted on a DJI RoboMaster EP. A ROS 2 Humble and Gazebo
 Fortress simulation produced five successful placements and five verified
 returns home, with a mean horizontal error of 4.358 mm and a maximum of
 5.604 mm. The group also observed five successful physical transfers without an
-abnormal event. Hardware success is supported by the submitted video and team
-observation; no instrumented hardware accuracy, force, payload, or timing data
+abnormal event in the nominal trials. The video's final empty grasp is a separate,
+deliberate object-removal test, as clarified by the team. The nominal 5/5 result
+is team-confirmed; no instrumented hardware accuracy, force, payload, or timing data
 are claimed. The report also states the interface differences introduced by
 replacing the unavailable standalone mechArm 270 with the RoboMaster platform.
 \end{abstract}
@@ -66,6 +67,7 @@ replacing the unavailable standalone mechArm 270 with the RoboMaster platform.
 repeatability}
 
 \begin{document}
+\raggedbottom
 \maketitle
 \thispagestyle{firststyle}
 
@@ -268,8 +270,12 @@ $n$ & \textbf{Direction} & \textbf{Transfer} & \textbf{Abnormality}\\
 
 \subsection{Separate video evidence}
 The real-device video is submitted as a separate artifact and is not embedded in
-this PDF. Visual review confirms the RoboMaster EP arm, gripper, target cubes,
-and operator terminal.
+this PDF. Its final segment documents an additional deliberate object-removal
+test, excluded from the five nominal transfers. At approximately 58--61 s an
+operator removes the target; at approximately 61--69 s the empty gripper closes
+and lifts. No subsequent transfer rotation is visible before the clip ends.
+The test intent and nominal 5/5 result were clarified by the team. The clip does
+not provide a legible terminal transcript or an instrumented stop-time record.
 
 \begin{table}[H]
 \caption{Hardware-video metadata.}
@@ -315,8 +321,23 @@ remaining heading after cycle 5.
 Archived notes record eight passing offline tests across model and five-cycle
 checks. An unreachable target such as $(10,10,0.6)$ is rejected by the solver
 with a \codepath{ValueError}; joint and coupling limits are checked before
-motion. Runtime stale-feedback and phase-timeout guards also exist. No separate
-system-level fault-injection run or individual safety-check record was supplied.
+motion. Runtime stale-feedback and phase-timeout guards also exist.
+
+\textbf{Hardware case H-01: object removed before grasping.}
+The team deliberately removed the target to exercise the grasp-failure path.
+The visible empty lift and absence of subsequent transfer are consistent with
+holding at the supervised confirmation checkpoint. In the archived SDK script,
+only a fresh \codepath{y} authorizes transfer. A negative/blank response or 30 s
+timeout aborts above the source without rotation or homing. The \codepath{finally}
+block attempts gripper pause, zero wheel speed, and SDK closure. These are
+code-defined actions; the exact input, timeout branch, and successful cleanup
+calls are not independently established by the video. H-01 is an additional
+negative test, not a failed nominal trial or an automatic object detector.
+
+The accompanying abnormal-test record separates observation from expected
+behavior. Communication loss, runtime limit violations, stale feedback and
+refill failures were not demonstrated as injected system faults. No separate
+individual safety-check record was supplied.
 
 \begin{table*}[t]
 \caption{Requirements, deviations, and evidence status.}
@@ -340,14 +361,15 @@ The public shared repository is
 \href{https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}
 {github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}. The experiment
 was completed before repository assembly. The history records the genuine
-review, organization, publication, and reporting sequence on 13 September 2026;
+review, organization, publication, and reporting sequence on 13--14 September 2026;
 it is not presented as a fabricated contemporaneous development history.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.70\textwidth]{commit_history_current.png}
-\caption{Ten repository commits visible after video upload and before addition
-of the first group-report build. Later commits added report materials.}
+\includegraphics[width=0.70\textwidth]{commit_history_excerpt.png}
+\caption{Commit-history evidence exported from the repository at revision
+\codepath{c232dcd}. The package also includes the text export; a later commit
+publishes this revised report.}
 \label{fig:commits}
 \end{figure*}
 
@@ -366,7 +388,7 @@ Model and point/height setup: \codepath{01_simulation/} & Included\\
 Simulation video: \codepath{03_videos/simulation/} & Included\\
 Real-device video: \codepath{03_videos/hardware/} & Included\\
 Five-cycle records: \codepath{04_results/} & Included\\
-Abnormal-test notes: \codepath{04_results/validation_record.md} & Limited\\
+Abnormal-test record: \codepath{04_results/abnormal_test_record.md} & Included\\
 Brief group report: \codepath{05_group_report/} & Included\\
 GitHub link and commit evidence: report and README & Included\\
 \bottomrule
@@ -383,7 +405,9 @@ without rerunning Gazebo.
 
 \subsection{Conclusion}
 The evidence supports five successful simulation cycles with home verification
-and five team-confirmed physical transfers without observed abnormality. The
+and five team-confirmed nominal physical transfers without observed abnormality.
+The separate object-removal test demonstrates an empty-grasp scenario with no
+subsequent transfer visible; exact terminal and cleanup events remain unlogged. The
 project demonstrates a complete fixed-point sequence on the available RoboMaster
 EP. Its strongest quantitative evidence is the saved simulation record; the
 physical result is supported by team observation and a separate real-device
@@ -394,7 +418,7 @@ video, not instrumented precision data.
 [1] Course handout, \emph{Robot Integration Group Project I: Fixed-Point
 Robotic-Arm Grasping}, S16--S20 / E5.\par
 [2] \href{https://github.com/ccx8kg5qpd-debug/robomaster-ep-fixed-point-grasping}
-{Public team repository}, main branch, 13 September 2026.\par
+{Public team repository}, main branch, revision of 14 September 2026.\par
 [3] Primary simulation record \codepath{20260913_153855_682865}; comparison
 record \codepath{20260913_151835_077998}.\par
 [4] Hardware-video metadata and SHA-256 in

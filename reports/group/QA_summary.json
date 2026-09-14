@@ -1,10 +1,18 @@
 {
-  "template": "Tau Class v2.6.0, adapted under CC BY 4.0",
+  "file": "RoboMaster_EP_Group_Experiment_2_Report.pdf",
   "pages": 3,
-  "blank_pages": [],
-  "missing_required_text": [],
+  "page_text_lengths": [
+    5185,
+    4562,
+    3899
+  ],
   "todo_count": 0,
-  "pending_count": 0,
-  "individual_report_entries": 0,
-  "visual_review": "passed"
+  "H01_present": true,
+  "nominal_5_of_5_present": true,
+  "repo_present": true,
+  "blank_pages": [],
+  "overfull": [],
+  "missing_glyphs": [],
+  "undefined_references": false,
+  "renderer": "Poppler"
 }
